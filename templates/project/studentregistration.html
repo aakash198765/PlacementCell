@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+
+
+</head>
+<body background="{% static '111.jpg' %}">
+
+<h1><font color="white"><center>Registration Form For Placement</center></font></h1><br>
+   <form method="POST" action="\Register/">
+       {% csrf_token %}
+ <font color="white"><center>Register Id:&nbsp&nbsp&nbsp&nbsp&nbsp<input name="RegisterId" ></center></font><br>
+ <font color="white"><center>Student Name:&nbsp<input   name="Studentname" type="text"></center></font><br>
+ <font color="white"><center>Date Of Birth:&nbsp&nbsp<input  name="DateOfBirth" data-type="date" ></center></font><br>
+ <font color="white"><center>City:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input  name="City"  type="text"></center></font><br>
+ <font color="white"><center>Mobile No.:&nbsp&nbsp&nbsp&nbsp<input  name="MobileNumber" data-type="tel"></center></font><br>
+ <font color="white"><center>Email:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input   name="Email" type="email"></center></font><br>
+ <font color="white"><center>Specification:&nbsp&nbsp<input  name="Specification" type="text"></center></font><br>
+ <font color="white"><center><input type="submit" class="button" value="Register"></center></font><br>
+</form>
+</body>
+</html>
+

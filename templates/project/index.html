@@ -1,0 +1,46 @@
+{% load static %}
+<html>
+<head>
+    <title>HOME PAGE</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'p1.css'%}">
+    </head>
+<body background="{% static 'placements1.jpg' %}">
+            <ul>
+                    <li> <a > File</a>
+                        <ul>
+                                 <li><a href="{% url 'stdreg' %}">Student Registration</a> </li>
+                                 <li> <a href="{% url 'placedstudents' %}">Registered Students</a></li>
+                        </ul>
+                      </li>
+                    <li> <a>Placement</a>
+                        <ul>
+                                 <li><a href="{% url 'placed' %}">Placed Students</a></li>
+                        </ul>
+                    </li>
+
+                    <li> <a>Search</a>
+                        <ul>
+                                <li><a href="{% url 'high' %}">Max Salary</a></li>
+                                <li><a href="{% url 'low' %}" >Min Salary</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li><a>ABOUT</a>
+                        <ul>
+                               <li><a href="{% url 'placementcell' %}">Placement Cell</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li><a> Placement Criteria</a>
+                        <ul>
+                            <li><a href="{% url 'crt' %}">Criteria</a></li>
+
+                        </ul>
+                    </li>
+            </ul>
+
+</body><br><br><br><br><br><br><br><br><br><br><br>
+<marquee direction="left"> <font size="25" color="white" ><b><i>SUCCESS IS NOT A DESTINATION , IT'S A  JOURNEY</i></b></font></marquee>
+</html>

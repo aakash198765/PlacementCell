@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<title>registered students</title>
+<style>
+table {
+border-collapse: collapse;
+width: 100%;
+color: #588c7e;
+font-family: monospace;
+font-size: 25px;
+text-align: left;
+}
+th {
+background-color: #588c7e;
+color: white;
+}
+tr:nth-child(even) {background-color: #f2f2f2}
+</style>
+</head>
+<body background="{% static '33.jpg' %}">
+<table>
+<tr>
+     <th>Student_Id</th>
+     <th>Register_Id</th>
+     <th>Company</th>
+     <th>Salary</th>
+
+</tr>
+<tr>
+    <td>{{data4.StudentId}}</td>
+    <td>{{data4.RegisterId}}</td>
+    <td>{{data4.CompanyName}}</td>
+    <td>{{data4.Salary}}</td>
+</tr>
+</table>
+</body>
